@@ -1,6 +1,7 @@
 # 0x03. ES6 data manipulation
-.How to use map, filter and reduce on arrays
 
-.Typed arrays
+How to use map, filter and reduce on arrays
 
-.The Set, Map, and Weak link data structures
+Typed arrays
+
+The Set, Map, and Weak link data structures
