@@ -19,10 +19,21 @@ const student2: Student = {
   location: "Nairobi",
 };
 
-const students: Student[] = [student1, student2];
+let studentsList: Student[] = [Student1, Student2]
 
-console.log('Firstname\tLastName\tAge\tLocation');
-students.forEach((student) => {
-  console.log(`\n${student.firstName}\t\t${student.lastName}\t\t${student.age}\t${student.location}`);
-});
+const student_table = document.createElement('table');
+const tablebody = document.createElement('tbody');
 
+studentsList.forEach((objectList)=>{
+    const tablename = document.createElement('tablename');
+    const tablerow = document.createElement('tablerow');
+    const tablelocation = document.createElement('tablelocation');
+
+    tablename.textContent = objectList.firstName;
+    tablelocation.textContent = objectList.location;
+    tablerow.appendChild(tablename);
+    tablerow.appendChild(tablelocation);
+    tablebody.appendChild(tablerow);
+})
+student_table.appendChild(tablebody);
+document.body.appendChild(student_table);
